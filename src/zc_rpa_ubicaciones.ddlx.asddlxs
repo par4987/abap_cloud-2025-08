@@ -1,0 +1,153 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'IdUbicacion'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'IdUbicacion'
+annotate view ZC_RPA_UBICACIONES with
+{
+  @EndUserText.label: 'IdUbicacion'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'IdUbicacion'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'IdUbicacion'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  IdUbicacion;
+  
+  @EndUserText.label: 'Pasillo'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Pasillo'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Pasillo'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Pasillo;
+  
+  @EndUserText.label: 'Nivel'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Nivel'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Nivel'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Nivel;
+  
+  @EndUserText.label: 'Material'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Material'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Material'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Material;
+  
+  @EndUserText.label: 'Cantidad'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Cantidad'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Cantidad'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Cantidad;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  LocalCreatedBy;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  LocalCreatedAt;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LastChangedAt;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 110 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  _BaseEntity;
+}

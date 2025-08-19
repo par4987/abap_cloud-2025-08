@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_RPA_UBICACIONES'
+@MappingRole: true
+define role ZR_RPA_UBICACIONES {
+  grant select on ZR_RPA_UBICACIONES
+  where TRUE;
+}

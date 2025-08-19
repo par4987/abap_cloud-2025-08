@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_RPA_UBICACIONES'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_RPA_UBICACIONES'
+  }
+}
+define service ZUI_RPA_UBICACIONES_O4 provider contracts odata_v4_ui {
+  expose ZC_RPA_UBICACIONES;
+}

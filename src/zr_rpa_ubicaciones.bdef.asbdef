@@ -1,0 +1,51 @@
+managed implementation in class ZBP_R_RPA_UBICACIONES unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_RPA_UBICACIONES alias ZrRpaUbicaciones
+persistent table ZRPA_UBICACIONES
+extensible
+draft table ZRPA_UBCCIONES_D
+etag master LastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   IdUbicacion;
+
+  field ( readonly )
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   IdUbicacion;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZRPA_UBICACIONES corresponding extensible
+  {
+    IdUbicacion = id_ubicacion;
+    Pasillo = pasillo;
+    Nivel = nivel;
+    Material = material;
+    Cantidad = cantidad;
+    LocalCreatedBy = local_created_by;
+    LocalCreatedAt = local_created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+
+}

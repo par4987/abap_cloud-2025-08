@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_RPA_UBICACIONES'
+@MappingRole: true
+define role ZC_RPA_UBICACIONES {
+  grant select on ZC_RPA_UBICACIONES
+  where INHERITING CONDITIONS FROM ENTITY ZR_RPA_UBICACIONES REPLACING { ROOT WITH _BaseEntity };
+}
