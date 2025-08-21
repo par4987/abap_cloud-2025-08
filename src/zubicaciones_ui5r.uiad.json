@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Ubicaciones almacen",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Ubicaciones"
+  },
+  "ui5AppDetails": {
+    "appId": "ubicaciones"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_BFD10580727A49150E3043AE05D2A37C03B928B8_TM",
+    "semanticObject": "Almacen",
+    "action": "Ubicacion",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_BFD10580727A49150E3043AE05D2A37C03B928B8_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Ubicaciones"
+      }
+    }
+  ]
+}
